@@ -10,3 +10,5 @@ dependencies:
     - scikit-learn
     - boto3
     - ipykernel
+    - seaborn
+    - plotnine
