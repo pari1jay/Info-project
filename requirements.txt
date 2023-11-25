@@ -5,7 +5,8 @@ ipykernel==6.26.0
 ipython==8.17.2
 jupyter_client==8.6.0
 jupyter_core==5.5.0
-matplotlib==3.8.1
+#matplotlib==3.8.1
+matplotlib
 matplotlib-inline==0.1.6
 nltk==3.8.1
 numpy==1.26.1
@@ -14,5 +15,6 @@ plotnine
 Pygments==2.16.1
 scikit-learn==1.3.2
 scipy==1.11.3
-seaborn==0.11.2
+#seaborn==0.11.2
+seaborn
 streamlit==1.28.1
