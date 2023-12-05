@@ -10,13 +10,13 @@ The sales prediction app goal is to provide insights into real estate sales tren
 ## Dataset:
 https://ggplot2.tidyverse.org/reference/txhousing.html
 A data frame with 8602 observations and 9 variables:
-city-Name of multiple listing service (MLS) area
-year,month-date
-sales-Number of sales
-volume-Total value of sales
-median-Median sale price
-listings-Total active listings
-inventory-"Months inventory": amount of time it would take to sell all current listings at current pace of sales.
+-  city-Name of multiple listing service (MLS) area
+-  year,month-date
+-  sales-Number of sales
+-  volume-Total value of sales
+-  median-Median sale price
+-  listings-Total active listings
+-  inventory-"Months inventory": amount of time it would take to sell all current listings at current pace of sales.
 
 ## Algorithm Description:
 Three machine learning algorithms for sales prediction were used. They are as follows:
