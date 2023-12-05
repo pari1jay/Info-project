@@ -18,16 +18,17 @@ inventory-"Months inventory": amount of time it would take to sell all current l
 ## Algorithm Description:
 Three machine learning algorithms for sales prediction were used. They are as follows:
 1. Linear Regression: establishes a linear relationship between features and the target variable.
-2 & 3. Random Forest, and Gradient Boosting -being ensemble methods, combine multiple decision trees to enhance predictive accuracy.
+2. Random Forest, and
+3. Gradient Boosting -being ensemble methods, combine multiple decision trees to enhance predictive accuracy.
 
 The trained models are incorporated into a Streamlit web application, enabling users to choose a model, input custom data, and receive immediate sales predictions.
 
 ## Tools Used:
 
-Python: programming language for data analysis, preprocessing, and model implementation.
-Pandas: Used for data manipulation and preprocessing tasks.
-Scikit-learn: used for machine learning models - Linear Regression, Random Forest, and Gradient Boosting.
-Streamlit: to create the interactive web application with user input functionality.
-Plotnine: For the dataset and also enables data visualization using a Grammar of Graphics approach within the Python.
-NumPy: Utilized for numerical operations and array manipulations.
-Git and GitHub: Version control system for collaborative development and code management.
+1. Python: programming language for data analysis, preprocessing, and model implementation.
+2. Pandas: Used for data manipulation and preprocessing tasks.
+3. Scikit-learn: used for machine learning models - Linear Regression, Random Forest, and Gradient Boosting.
+4. Streamlit: to create the interactive web application with user input functionality.
+5. Plotnine: For the dataset and also enables data visualization using a Grammar of Graphics approach within the Python.
+6. NumPy: Utilized for numerical operations and array manipulations.
+7. Git and GitHub: Version control system for collaborative development and code management.
