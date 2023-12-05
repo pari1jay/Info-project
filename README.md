@@ -1,5 +1,8 @@
 # Info-project
 
+## APP:
+https://info-project-elwbo5ng8haxnm4mzjzkck.streamlit.app/
+
 
 ## Abstract:
 The sales prediction app goal is to provide insights into real estate sales trends using the txhousing dataset. I have used machine learning algorithms, including Linear Regression, Random Forest, and Gradient Boosting, to make the app predict sales based on features such as volume, median, listings, and inventory available in the data.
