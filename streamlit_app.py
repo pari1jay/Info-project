@@ -1,10 +1,13 @@
 import pandas as pd
+import numpy as np
+import streamlit as st
+
+import scikit-learn as sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error, r2_score
-import numpy as np
-import streamlit as st
+
 
 from plotnine.data import txhousing
 df = txhousing
