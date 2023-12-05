@@ -6,10 +6,12 @@ from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 import streamlit as st
 
-
-
+from plotnine.data import txhousing
+df = txhousing
+#drop rows with NAN values 
+df.dropna(inplace=True)
 try:
-    data = txhousing
+    data = df
 
     if data is not None:
         selected_features = ['volume', 'median', 'listings', 'inventory']
