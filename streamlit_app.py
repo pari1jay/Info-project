@@ -81,16 +81,15 @@ try:
         # User input form
         st.sidebar.header("Enter User Data")
 
-        # Get the min and max values for each feature in the dataset
         min_values = city_data[selected_features].min()
         max_values = city_data[selected_features].max()
 
-        # Dynamic number input fields with min and max values
-        volume = st.sidebar.number_input("Volume-total value of sales", min_value=float(min_values['volume']), max_value=float(max_values['volume']), value=float(min_values['volume']))
+        # input fields with min and max values
+        volume = st.sidebar.number_input("Volume-total value of sales", min_value=float(min_values['volume']),      max_value=float(max_values['volume']), value=float(min_values['volume']))
         
-        median = st.sidebar.number_input("Median sale price", min_value=float(min_values['median']), max_value=float(max_values['median']), value=float(min_values['median']))
+        median = st.sidebar.number_input("Median sale price", min_value=float(min_values['median']),  max_value=float(max_values['median']), value=float(min_values['median']))
         
-        listings = st.sidebar.number_input("Total active Listings", min_value=float(min_values['listings']), max_value=float(max_values['listings']), value=float(min_values['listings']))
+        listings = st.sidebar.number_input("Total active Listings", min_value=float(min_values['listings']),      max_value=float(max_values['listings']), value=float(min_values['listings']))
         
         inventory = st.sidebar.number_input("Months in Inventory ")#, min_value=float(min_values['inventory']), max_value=float(max_values['inventory']), value=float(min_values['inventory']))
         
@@ -119,9 +118,51 @@ try:
         
         prediction_city = selected_model_city.predict(user_data)
         st.write(f"Predicted sales for {selected_city}: {prediction_city[0]}")
+        
+########## CSV File Upload
+        
+        st.header("Upload CSV File")
+
+        csv_file = st.file_uploader("Upload a CSV file for predictions", type=["csv"])
+
+        if csv_file is not None:
+    
+            df_uploaded = pd.read_csv(csv_file)
+
+            X_uploaded = df_uploaded[selected_features]
+
+    
+            if 'Random Forest (City)' in models_city:
+                selected_model_city = models_city['Random Forest (City)']  
+                selected_model_city.fit(X_train_city, y_train_city)
+
+       
+                predictions_uploaded = selected_model_city.predict(X_uploaded)
+
+        
+                df_uploaded['Predicted_Sales'] = predictions_uploaded
+
+        
+                st.subheader("Predictions for Uploaded CSV:")
+                st.write(df_uploaded)
+
+        # Download predictions as a CSV file
+                st.download_button(
+                    label="Download Predictions",
+                    data=df_uploaded.to_csv(index=False),
+                    file_name="predictions.csv",
+                    key="download_button",
+                )
+            else:
+                st.write("Error: Random Forest (City) model not found.")
+
+        
 
     else:
         st.write("Error: Data not loaded.")
 
 except Exception as e:
     st.write(f"Error: {e}")
+
+    
+    
