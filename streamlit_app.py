@@ -95,7 +95,7 @@ try:
         inventory = st.sidebar.number_input("Months in Inventory ")#, min_value=float(min_values['inventory']), max_value=float(max_values['inventory']), value=float(min_values['inventory']))
         
         st.sidebar.subheader("Enter Date:")
-        year = st.sidebar.slider("Year", min_value=1970, max_value=2020, value=int(min_values['year']))
+        year = st.sidebar.slider("Year", min_value=1970, max_value=2015, value=int(min_values['year']))
         month = st.sidebar.slider("Month", min_value=1, max_value=12, value=int(min_values['month']))
 
         
