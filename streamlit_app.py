@@ -103,7 +103,7 @@ try:
         user_data = np.array([[volume, median, listings, inventory, year, month]])
 
         # Model selection for the entire dataset
-        st.subheader("Select Model - entire dataset is used fo rtraining here")
+        st.subheader("Select Model - entire dataset is used for training here")
         model_selector_all = st.selectbox("Select a Model (All)", list(models_all.keys()))
         selected_model_all = models_all[model_selector_all]
         selected_model_all.fit(X_train, y_train)
