@@ -39,3 +39,8 @@ I've extended the Streamlit app to include separate models trained on the entire
 5. Plotnine: For the dataset and also enables data visualization using a Grammar of Graphics approach within the Python.
 6. NumPy: Utilized for numerical operations and array manipulations.
 7. Git and GitHub: Version control system for collaborative development and code management.
+
+
+### notes
+1. I have included a sample dataset to test out on the app: txhousing_sample_excluded
+2. Verify the results with the txhousing_sample
