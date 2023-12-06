@@ -25,6 +25,7 @@ Three machine learning algorithms for sales prediction were used. They are as fo
 3. Gradient Boosting -being ensemble methods, combine multiple decision trees to enhance predictive accuracy.
 
 The trained models are incorporated into a Streamlit web application, enabling users to choose a model, input custom data, and receive immediate sales predictions.
+I've extended the Streamlit app to include separate models trained on the entire dataset and the filtered data for the selected city. So, users can input their data, select the models, and see the predictions from model trained on the entire dataset and from model trained on dataset for selected city.
 
 ## Tools Used:
 
