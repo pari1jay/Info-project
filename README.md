@@ -5,7 +5,7 @@ https://info-project-elwbo5ng8haxnm4mzjzkck.streamlit.app/
 
 
 ## Abstract:
-The project is on developing a sales prediction Web app using Texas housing dataset('txhousing'). The goal here is to provide insights into real estate sales trends using the this dataset. I have used machine learning algorithms like Linear Regression, Random Forest, and Gradient Boosting, to make the app predict sales based on features like volume, median price, listings, and inventory. Users can input data and select a model which they want to make predictions.
+The project is on developing a sales prediction Web app using Texas housing dataset('txhousing'). The goal here is to provide insights into real estate sales trends using this dataset. I have used machine learning algorithms like Linear Regression, Random Forest, and Gradient Boosting, to make the app predict sales based on features like volume, median price, listings, and inventory. Users can input data and select a model which they want to make predictions.
 
 ## Dataset:
 https://ggplot2.tidyverse.org/reference/txhousing.html
