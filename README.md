@@ -1,4 +1,4 @@
-# Info-project
+# Informatics project : sales prediction
 
 ## APP:
 https://info-project-elwbo5ng8haxnm4mzjzkck.streamlit.app/
